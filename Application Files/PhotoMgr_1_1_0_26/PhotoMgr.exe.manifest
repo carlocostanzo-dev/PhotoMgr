@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="PhotoMgr.exe" version="1.1.0.26" publicKeyToken="b85c1eda6c536496" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="JPG.ICO" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="PhotoMgr" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="PhotoMgr.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet version="1" class="System.Security.NamedPermissionSet" Name="Internet" Description="Default rights given to Internet applications" Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- UAC Manifest Options
+             If you want to change the Windows User Account Control level replace the 
+             requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            Specifying requestedExecutionLevel element will disable file and registry virtualization. 
+            Remove this element if your application requires this virtualization for backwards
+            compatibility.
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PhotoMgr.exe" size="570848">
+      <assemblyIdentity name="PhotoMgr" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>IPxw93zvYI6KlNUjnG0LuMfoKtAFoQacJj2Q/DL96eU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="exiftool.exe" size="8813209">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>IeNZ0yIB0JIJdsN301C8BCuSz1SjSh9ouKO7MNoSesM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="JPG.ICO" size="171014">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Pq1gGfTWXbZNupZ6UCa/irncZ1p2NgzHQoODYK7IgEw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="PhotoMgr.exe.config" size="1142">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>U4o/GRnbyG7S16jA9rG2xgqJMdHe6WwgACCIFZL1Nag=</dsig:DigestValue>
+    </hash>
+  </file>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- A list of the Windows versions that this application has been tested on
+           and is designed to work with. Uncomment the appropriate elements
+           and Windows will automatically select the most compatible environment. -->
+      <!-- Windows Vista -->
+      <!--<supportedOS Id="{e2011457-1546-43c5-a5fe-008deee3d3f0}" />-->
+      <!-- Windows 7 -->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}" />-->
+      <!-- Windows 8 -->
+      <!--<supportedOS Id="{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}" />-->
+      <!-- Windows 8.1 -->
+      <!--<supportedOS Id="{1f676c76-80e1-4239-95bb-83d0f6d0da78}" />-->
+      <!-- Windows 10 -->
+      <!--<supportedOS Id="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}" />-->
+    </application>
+  </compatibility>
+<publisherIdentity name="CN=ATOPSPA\carlocostanzo" issuerKeyHash="02d57915a74449ab63f1d95c5d884086dff53f90" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>3tbZ1T1KNoOl6wwj4f6sWbkx18GG0yTCl9X11JHJDS4=</DigestValue></Reference></SignedInfo><SignatureValue>ebLEJpym2BTGVDvz/XF6QDld6u8bcc2tQLCmaxotov/BCfTiE7WnJ7+dDlvErwDgoy01tiW1GQ1crwR3LoiAZar2ShLnl6RDHSH1iE/F++vzrbTjMC8w692E+oqUFfp2mS1qlw0AwsEyDXw5uL0/OPTjVYDmpIA/HNd7FBYJRtc=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>2K7rB+BFcFLYOEOzJU9o89VhOxIQr7yqJ2EPR2aGJbMen4nymoKvgyGISsZ/yIsxE+q7K1LU6yj7S1Eu1IPNrBuvO0PSx2JPorNL4ats/OrXfd9UQkfpVzDrdH1gboEMjaOjL3qt0hOoyZzWU7wJdRVL+93OTOV2iqWiqAJl3Lk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="2e0dc991d4f5d597c224d386c1d731b959acfee1230ceba583364a3dd5d9d6de" Description="" Url=""><as:assemblyIdentity name="PhotoMgr.exe" version="1.1.0.26" publicKeyToken="b85c1eda6c536496" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=ATOPSPA\carlocostanzo</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>KY4dfsX9IGIcJRH0/XZeYdsx9K2x+8kiSV6pcFsPC7E=</DigestValue></Reference></SignedInfo><SignatureValue>Fkb2yvKtiznAVrooQhCMev7r7wmf1TCVAwpXw8qecqUPN4tZrSGNhWYHSYfIod6szkmzsF/mgCx/ekqud6YBA/dmMFjibP4fiIh4FN0ZSCvJNGzw7A7EvqPLISHxbC6hfANt3u4Gy2RLegJaHtIvOeo6Psud+8cqdUK9K2k9T0k=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>2K7rB+BFcFLYOEOzJU9o89VhOxIQr7yqJ2EPR2aGJbMen4nymoKvgyGISsZ/yIsxE+q7K1LU6yj7S1Eu1IPNrBuvO0PSx2JPorNL4ats/OrXfd9UQkfpVzDrdH1gboEMjaOjL3qt0hOoyZzWU7wJdRVL+93OTOV2iqWiqAJl3Lk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB7TCCAVagAwIBAgIQF3Hk3m3RBKtBOoRbCwCt1zANBgkqhkiG9w0BAQsFADA1MTMwMQYDVQQDHioAQQBUAE8AUABTAFAAQQBcAGMAYQByAGwAbwBjAG8AcwB0AGEAbgB6AG8wHhcNMjIwMTIwMDgxMTA2WhcNMjMwMTIwMTQxMTA2WjA1MTMwMQYDVQQDHioAQQBUAE8AUABTAFAAQQBcAGMAYQByAGwAbwBjAG8AcwB0AGEAbgB6AG8wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBANiu6wfgRXBS2DhDsyVPaPPVYTsSEK+8qidhD0dmhiWzHp+J8pqCr4MhiErGf8iLMRPquytS1Oso+0tRLtSDzawbrztD0sdiT6KzS+GrbPzq133fVEJH6Vcw63R9YG6BDI2joy96rdITqMmc1lO8CXUVS/vdzkzldoqloqgCZdy5AgMBAAEwDQYJKoZIhvcNAQELBQADgYEA1GBBKgUeOCBYPPsb5wP+ZcIbDZNvkhFtBTeSkA9+h8lBtenkrGKmEhAyPb76sa6QUndV0EK1FNtz06tiCGIyIYwSe1WnNF40/oxLykEjSS4P5YT4L2rocQFo6CIyq1cpVgdSErf/ByurjLpqMOziLmiFUa84VfkBZPytBm3+HOU=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
